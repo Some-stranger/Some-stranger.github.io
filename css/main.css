@@ -86,7 +86,7 @@ ul {
 
 .site-main .nav ul a:hover {
 	background: #32CB8F;
-	box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
 }
 
 .site-main .main {
