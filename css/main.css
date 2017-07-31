@@ -71,14 +71,14 @@ ul {
 
 }
 
-.site-main .container .nav ul li {
+.site-main .container .nav ul a {
 	padding: 19px 0;
 	display: inline-flex;
 	flex-grow: 1;
 	justify-content: center;
 }
 
-.site-main .container .nav ul li:hover {
+.site-main .container .nav ul a:hover {
 		background: #38ad38;
 }
 
@@ -114,25 +114,25 @@ ul {
 	flex-direction: column;
 }
 
-.site-main .site-bar .bar ul li {
+.site-main .site-bar .bar ul a {
 	justify-content: center;
 	padding: 10px 15px;
 }
 
-.site-main .site-bar .bar ul li:last-child {
+.site-main .site-bar .bar ul a:last-child {
 	padding-bottom: 20px;
 }
 
-.site-main .site-bar .bar ul li:hover {
+.site-main .site-bar .bar ul a:hover {
 	background: #38ad38;
 }
 
-.site-main .site-bar .bar ul li:last-child {
+.site-main .site-bar .bar ul a:last-child {
 	padding-bottom: 20px;
 }
 
 .site-main .site-bar a {
-	margin-top: 40px;
+	margin-top: 15px;
 }
 
 .site-main .content-section {
