@@ -38,3 +38,13 @@
 	font-style: normal;
 	font-weight: normal;
 }
+/* font-family: "Caviardreams"; */
+@font-face {
+	font-family: "Raleway-light";
+	src: url("../fonts/Raleway-medium/Raleway-medium.eot");
+	src: url("../fonts/Raleway-medium/Raleway-medium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/CRaleway-medium/Raleway-medium.woff") format("woff"),
+	url("../fonts/Raleway-medium/Raleway-medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
