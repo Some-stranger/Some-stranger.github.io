@@ -28,6 +28,7 @@ body {
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
+	background-color: #E6E6E6;
 }
 
 ol,
@@ -40,7 +41,7 @@ ul {
 	color: #000;
 }
 .site-main {
-	
+
 }
 
 .site-main .container {
@@ -48,17 +49,16 @@ ul {
 }
 
 .site-main .container .header, .nav ul, .bar, .content-section {
-	margin: 15px;
-	background: #3cc13c;
 	box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 }
 
 .site-main .container .header {
-	height: 160px;
+	height: 90px;
 }
 
 .site-main .container .nav {
+	width: 100%;
 
 
 }
@@ -66,6 +66,7 @@ ul {
 .site-main .container .nav ul {
 	height: 60px;
 	padding: 0;
+	margin: 0;
 	display: flex;
 	align-items: center;
 
@@ -117,6 +118,7 @@ ul {
 .site-main .site-bar .bar ul a {
 	justify-content: center;
 	padding: 10px 15px;
+	margin-top: 15px;
 }
 
 .site-main .site-bar .bar ul a:last-child {
@@ -125,14 +127,6 @@ ul {
 
 .site-main .site-bar .bar ul a:hover {
 	background: #38ad38;
-}
-
-.site-main .site-bar .bar ul a:last-child {
-	padding-bottom: 20px;
-}
-
-.site-main .site-bar a {
-	margin-top: 15px;
 }
 
 .site-main .content-section {
@@ -151,7 +145,11 @@ ul {
 	align-items: center;
 }
 
-
+.content-section {
+	padding-top: 20px;
+	display: inline-flex;
+	justify-content: flex-end;
+}
 
 
 
@@ -173,7 +171,7 @@ footer {
 	height: 100px;
 	width: 100%;
 	margin-top: 50px;
-	background-color: #868686;
+	background-color: #464646;
 }
 
 
