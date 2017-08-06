@@ -12,8 +12,8 @@
 }
 .callkeeper_phonewidget{
   position:fixed !important;
-  left:80%;
-  top:75%;
+  right:10px;
+  top:10px;
   display: none;
   background-color:transparent;
   width:200px;
