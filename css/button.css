@@ -13,7 +13,7 @@
 .callkeeper_phonewidget{
   position:fixed !important;
   right:10px;
-  top:10px;
+  bottom:55px;
   display: none;
   background-color:transparent;
   width:200px;
