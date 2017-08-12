@@ -1,147 +1,99 @@
-.callkeeper_phonewidget.ck_green .callkeeper_circle3,
-.callkeeper_phonewidget.ck_green .callkeeper_circle1,
-.callkeeper_phonewidget.ck_green .callkeeper_circle2,
-.callkeeper_phonewidget.ck_green .callkeeper_circle4
-{
-    border-color: #84f030;
+.callkeeper-phonewidget {
+	position: fixed;
+	right: 10px;
+	bottom: 55px;
+	display: block;
+	background-color: transparent;
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+	z-index: 99999;
+	opacity: .8;
 }
 
-.callkeeper_phonewidget.ck_green .callkeeper_img_circle:
-{
-    background-color: #84f030;
-}
-.callkeeper_phonewidget{
-  position:fixed !important;
-  right:10px;
-  bottom:55px;
-  display: none;
-  background-color:transparent;
-  width:200px;
-  height:200px;
-  cursor:pointer;
-  z-index:200000!important;
-  opacity:.8
-}
-
-.callkeeper_phonewidget.ck_visible { display: block; }
-
-.callkeeper_circle1, .callkeeper_circle2 {
-  width:130px;
-  height:130px;
-  top:35px;
-  position:absolute;
-  -webkit-border-radius:100%;
-  -moz-border-radius:100%;
-  border-radius: 100% !important;
-  border-right:2px solid #00BFFF;
-  border-color:#00BFFF;
-  opacity:.6;
-  -webkit-animation:callkeeper_circle-anim 2.2s infinite linear!important;
-  -moz-animation:callkeeper_circle-anim 2.2s infinite linear!important;
-  -ms-animation:callkeeper_circle-anim 2.2s infinite linear!important;
-  -o-animation:callkeeper_circle-anim 2.2s infinite linear!important;
-  animation:callkeeper_circle-anim 2.2s infinite linear!important;
-  -webkit-transition:all .5s;
-  -moz-transition:all .5s;
-  -o-transition:all .5s;
-  transition:all .5s
-}
-
-.callkeeper_circle3, .callkeeper_circle4{
-  width:130px;
-  height:130px;
-  top:35px;
-  position:absolute;
-  -webkit-border-radius:100%;
-  -moz-border-radius:100%;
-  border-radius: 100% !important;
-  border-left:2px solid #00BFFF;
-  border-color:#00BFFF;
-  opacity:.6;
-  -webkit-transition:all .5s;
-  -moz-transition:all .5s;
-  -o-transition:all .5s;
-  transition:all .5s
-}
-
-.callkeeper_phonewidget.ck_active { opacity:1 }
-
-.callkeeper_phonewidget.ck_inactive .callkeeper_circle1, .callkeeper_phonewidget.ck_inactive .callkeeper_circle2, .callkeeper_phonewidget.ck_inactive .callkeeper_circle3, .callkeeper_phonewidget.ck_inactive .callkeeper_circle4
-{
-  -webkit-animation:callkeeper_circle-anim 2.2s infinite linear!important;
-  -moz-animation:callkeeper_circle-anim 2.2s infinite linear!important;
-  -ms-animation:callkeeper_circle-anim 2.2s infinite linear!important;
-  -o-animation:callkeeper_circle-anim 2.2s infinite linear!important;
-  animation:callkeeper_circle-anim 2.2s infinite linear!important;
-  transform-origin: center;
-}
-
-.callkeeper_phonewidget.ck_active .callkeeper_circle1, .callkeeper_phonewidget.ck_active .callkeeper_circle2, .callkeeper_phonewidget.ck_active .callkeeper_circle3, .callkeeper_phonewidget.ck_active .callkeeper_circle4
-{
-  -webkit-animation:callkeeper_circle-anim1 1s infinite linear!important;
-  -moz-animation:callkeeper_circle-anim1 1s infinite linear!important;
-  -ms-animation:callkeeper_circle-anim1 1s infinite linear!important;
-  -o-animation:callkeeper_circle-anim1 1s infinite linear!important;
-  animation:callkeeper_circle-anim1 1s infinite linear!important;
-}
-
-.callkeeper_phonewidget.ck_green .callkeeper_circle1, .callkeeper_phonewidget.ck_green .callkeeper_circle2
-{
-  transform-origin: center;
-  border-right:2px solid #84f030;
-  border-color:#84f030; 
-}
-
-.callkeeper_phonewidget.ck_green .callkeeper_circle3, .callkeeper_phonewidget.ck_green .callkeeper_circle4
-{
-  transform-origin: center;
-  border-left:2px solid #84f030;
-  border-color:#84f030; 
-}
-
-.callkeeper_phonewidget:hover .callkeeper_circle3, 
-.callkeeper_phonewidget:hover .callkeeper_circle4
-{
-  
-}
-
-.callkeeper_circle1{left:40px}
-.callkeeper_circle2{left:60px}
-.callkeeper_circle3{left:30px}
-.callkeeper_circle4{left:10px}
-
-
-.callkeeper_img_circle
-{
-  width:60px;
-  height:60px;
-  top:70px;
-  left:70px;
-  position:absolute;
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI2MHB4IiBoZWlnaHQ9IjYwcHgiIHZpZXdCb3g9IjAgMCA4NS4xNzEgODUuMTcyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4NS4xNzEgODUuMTcyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGcgaWQ9InB1cnBsZSI+CjwvZz4KPGcgaWQ9ImJsdWUiPgo8L2c+CjxnIGlkPSJncmVlbiI+Cgk8Zz4KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMzkuNDIyLDI3LjgzNmMtMS41MTYsMC0yLjc0NywxLjIzMi0yLjc0NywyLjc0OGMwLDEuNTE5LDEuMjI5LDIuNzQ4LDIuNzQ3LDIuNzQ4CgkJCWMzLjQ3OSwwLjAwMSw2LjYsMS4zODEsOC44NjksMy42MDZjMi4yNjYsMi4yMzQsMy42NDksNS4yNzEsMy42NSw4LjY1MmMwLDEuNTE2LDEuMjMxLDIuNzQ3LDIuNzQ4LDIuNzQ3CgkJCWMxLjUxOCwwLDIuNzQ3LTEuMjMxLDIuNzQ3LTIuNzQ3YzAuMDAxLTQuOTA4LTIuMDMzLTkuMzcxLTUuMjkzLTEyLjU3MUM0OC44ODYsMjkuODE2LDQ0LjM3NCwyNy44MzYsMzkuNDIyLDI3LjgzNnoiLz4KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNjUuMTgzLDQ2Ljg0MmMyLjcyOSwwLDIuNzUtMi43NywyLjc0Ny0yLjhjLTAuMDEzLTcuMzUyLTMuMDYxLTE0LjAyNS03Ljk1MS0xOC44MjUKCQkJYy00Ljg5Ny00LjgyLTExLjY4LTcuOC0xOS4xMzgtNy43OThjLTEuNTE5LDAtMi43NDgsMS4yMzEtMi43NDgsMi43NDljMCwxLjUxNywxLjIyOSwyLjc0NywyLjc0OCwyLjc0NwoJCQljNS45ODYsMCwxMS4zNzQsMi4zNzcsMTUuMjg3LDYuMjJjMy45MDMsMy44NDEsNi4yOTksOS4xMDEsNi4zMDksMTQuOTM0QzYyLjQzNSw0NC4xMDMsNjIuNDEyLDQ2Ljg0Miw2NS4xODMsNDYuODQyeiIvPgoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik00Mi41ODUsMEMxOS4wNjYsMCwwLDE5LjA2NywwLDQyLjU4NnMxOS4wNjYsNDIuNTg2LDQyLjU4NSw0Mi41ODZjOS42OSwwLDE5LjEwOS0yLjY1LDI1Ljc3Ni04LjY4OAoJCQljOC4xMTQtNy4zNDYsMS41NjYtMTIuNDAzLTQuNDY5LTE0LjAxM2MwLjI0Mi0wLjgzMywwLjQyLTEuNTA0LDAuNDU5LTEuNzc5YzAuNTczLTQuMDQ1LTE0LjIzMy05Ljg3LTE2LjIzNy01Ljg2MQoJCQljLTAuNTU5LDEuMTEyLTEuMzA2LDQuNDMxLTQuNzEzLDIuMzk5Yy0yLjM3OS0xLjQyMi0xNC4wNy0xMy4xMS0xNS40ODktMTUuNDljLTIuMDMyLTMuNDA1LDEuMjg2LTQuMTUzLDIuMzk4LTQuNzA5CgkJCWM0LjAxLTIuMDA0LTEuODE1LTE2LjgxMy01Ljg2LTE2LjIzOGMtMC45NDEsMC4xMzQtNi40MjMsMS44NDktNy41ODYsMi40MDRjLTIuMjEsMS4wNTgtNS4yODYsNi4yNDUtMy4yNjcsMTIuODc1CgkJCWMxLjUyMiw1LDQuNDU4LDEyLjc1MiwxMy41OSwyMS44ODNjOS4xMzMsOS4xMzEsMTYuODgyLDEyLjA2OCwyMS44ODUsMTMuNTkxYzYuNjI5LDIuMDE5LDExLjgxNi0xLjA1NywxMi44NzUtMy4yNjgKCQkJYzAuMTAzLTAuMjE2LDAuMjQ3LTAuNTgsMC40MTItMS4wMzdjNi4yODgsMS41MTIsNC42NjcsNC41MSwxLjUwMSw2LjcyNmMtNS40NDUsMy44MTEtMTMuMzc2LDYuMjE4LTIxLjI3NCw2LjIxOAoJCQljLTIwLjc2NSwwLTM3LjYtMTYuODMzLTM3LjYwMS0zNy41OTljMC0yMC43NjYsMTYuODM2LTM3LjYwMSwzNy42MDEtMzcuNjAxYzIwLjc2NywwLDM3LjYwMSwxNi44MzUsMzcuNjAxLDM3LjYwMQoJCQljMCw3Ljg2OS0xLjg1NCwxMi45ODMtNC4zMzcsMTcuMDE2Yy0xLjk0MSwzLjc5OS0wLjcwMiw5LjAyNywwLjgsNy43NTJjNS43LTYuMDQzLDguNTIyLTE2LjAwMyw4LjUyMi0yNC43NjgKCQkJQzg1LjE3MSwxOS4wNjcsNjYuMTA1LDAsNDIuNTg1LDB6Ii8+Cgk8L2c+CjwvZz4KPGcgaWQ9Im9yYW5nZSI+CjwvZz4KPGcgaWQ9ImJsYWNrIj4KPC9nPgo8L3N2Zz4=");
-  background-color:#00BFFF;
-  background-size: 60px 60px;
-  background-position:center center;
-  background-repeat:no-repeat;
-  -webkit-border-radius:100%;
-  -moz-border-radius:100%;
-  border-radius:100% !important;
-  border:2px solid transparent;
-  opacity:.7;
-  background-size: 100%;
-}
-
-.callkeeper_circle1:hover, .callkeeper_circle2:hover, .callkeeper_circle3:hover, .callkeeper_circle4:hover {
-	border-color: #84f030;
-}
-
-
-
-.callkeeper_img_circle:hover {
+.callkeeper-phonewidget:hover .callkeeper-img-circle {
 	background-color: #84f030;
 }
 
-@-moz-keyframes callkeeper_circle-anim 
+.callkeeper-phonewidget:hover .callkeeper-circle1, .callkeeper-phonewidget:hover .callkeeper-circle2
+{
+	border-right: 2px solid #84f030;
+}
+
+.callkeeper-phonewidget:hover .callkeeper-circle3, .callkeeper-phonewidget:hover .callkeeper-circle4
+{
+	border-left:2px solid #84f030;
+}
+
+.callkeeper-img-circle {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	bottom: 70px;
+	right: 65.5px;
+	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI2MHB4IiBoZWlnaHQ9IjYwcHgiIHZpZXdCb3g9IjAgMCA4NS4xNzEgODUuMTcyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4NS4xNzEgODUuMTcyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGcgaWQ9InB1cnBsZSI+CjwvZz4KPGcgaWQ9ImJsdWUiPgo8L2c+CjxnIGlkPSJncmVlbiI+Cgk8Zz4KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMzkuNDIyLDI3LjgzNmMtMS41MTYsMC0yLjc0NywxLjIzMi0yLjc0NywyLjc0OGMwLDEuNTE5LDEuMjI5LDIuNzQ4LDIuNzQ3LDIuNzQ4CgkJCWMzLjQ3OSwwLjAwMSw2LjYsMS4zODEsOC44NjksMy42MDZjMi4yNjYsMi4yMzQsMy42NDksNS4yNzEsMy42NSw4LjY1MmMwLDEuNTE2LDEuMjMxLDIuNzQ3LDIuNzQ4LDIuNzQ3CgkJCWMxLjUxOCwwLDIuNzQ3LTEuMjMxLDIuNzQ3LTIuNzQ3YzAuMDAxLTQuOTA4LTIuMDMzLTkuMzcxLTUuMjkzLTEyLjU3MUM0OC44ODYsMjkuODE2LDQ0LjM3NCwyNy44MzYsMzkuNDIyLDI3LjgzNnoiLz4KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNjUuMTgzLDQ2Ljg0MmMyLjcyOSwwLDIuNzUtMi43NywyLjc0Ny0yLjhjLTAuMDEzLTcuMzUyLTMuMDYxLTE0LjAyNS03Ljk1MS0xOC44MjUKCQkJYy00Ljg5Ny00LjgyLTExLjY4LTcuOC0xOS4xMzgtNy43OThjLTEuNTE5LDAtMi43NDgsMS4yMzEtMi43NDgsMi43NDljMCwxLjUxNywxLjIyOSwyLjc0NywyLjc0OCwyLjc0NwoJCQljNS45ODYsMCwxMS4zNzQsMi4zNzcsMTUuMjg3LDYuMjJjMy45MDMsMy44NDEsNi4yOTksOS4xMDEsNi4zMDksMTQuOTM0QzYyLjQzNSw0NC4xMDMsNjIuNDEyLDQ2Ljg0Miw2NS4xODMsNDYuODQyeiIvPgoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik00Mi41ODUsMEMxOS4wNjYsMCwwLDE5LjA2NywwLDQyLjU4NnMxOS4wNjYsNDIuNTg2LDQyLjU4NSw0Mi41ODZjOS42OSwwLDE5LjEwOS0yLjY1LDI1Ljc3Ni04LjY4OAoJCQljOC4xMTQtNy4zNDYsMS41NjYtMTIuNDAzLTQuNDY5LTE0LjAxM2MwLjI0Mi0wLjgzMywwLjQyLTEuNTA0LDAuNDU5LTEuNzc5YzAuNTczLTQuMDQ1LTE0LjIzMy05Ljg3LTE2LjIzNy01Ljg2MQoJCQljLTAuNTU5LDEuMTEyLTEuMzA2LDQuNDMxLTQuNzEzLDIuMzk5Yy0yLjM3OS0xLjQyMi0xNC4wNy0xMy4xMS0xNS40ODktMTUuNDljLTIuMDMyLTMuNDA1LDEuMjg2LTQuMTUzLDIuMzk4LTQuNzA5CgkJCWM0LjAxLTIuMDA0LTEuODE1LTE2LjgxMy01Ljg2LTE2LjIzOGMtMC45NDEsMC4xMzQtNi40MjMsMS44NDktNy41ODYsMi40MDRjLTIuMjEsMS4wNTgtNS4yODYsNi4yNDUtMy4yNjcsMTIuODc1CgkJCWMxLjUyMiw1LDQuNDU4LDEyLjc1MiwxMy41OSwyMS44ODNjOS4xMzMsOS4xMzEsMTYuODgyLDEyLjA2OCwyMS44ODUsMTMuNTkxYzYuNjI5LDIuMDE5LDExLjgxNi0xLjA1NywxMi44NzUtMy4yNjgKCQkJYzAuMTAzLTAuMjE2LDAuMjQ3LTAuNTgsMC40MTItMS4wMzdjNi4yODgsMS41MTIsNC42NjcsNC41MSwxLjUwMSw2LjcyNmMtNS40NDUsMy44MTEtMTMuMzc2LDYuMjE4LTIxLjI3NCw2LjIxOAoJCQljLTIwLjc2NSwwLTM3LjYtMTYuODMzLTM3LjYwMS0zNy41OTljMC0yMC43NjYsMTYuODM2LTM3LjYwMSwzNy42MDEtMzcuNjAxYzIwLjc2NywwLDM3LjYwMSwxNi44MzUsMzcuNjAxLDM3LjYwMQoJCQljMCw3Ljg2OS0xLjg1NCwxMi45ODMtNC4zMzcsMTcuMDE2Yy0xLjk0MSwzLjc5OS0wLjcwMiw5LjAyNywwLjgsNy43NTJjNS43LTYuMDQzLDguNTIyLTE2LjAwMyw4LjUyMi0yNC43NjgKCQkJQzg1LjE3MSwxOS4wNjcsNjYuMTA1LDAsNDIuNTg1LDB6Ii8+Cgk8L2c+CjwvZz4KPGcgaWQ9Im9yYW5nZSI+CjwvZz4KPGcgaWQ9ImJsYWNrIj4KPC9nPgo8L3N2Zz4=");
+	background-color: #00BFFF;
+	background-size: 60px 60px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	border: 2px solid transparent;
+	opacity: .7;
+	background-size: 100%;
+}
+
+
+
+.callkeeper-circle1, .callkeeper-circle2 {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	top: 35px;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	border-radius: 100%;
+	border-right: 2px solid #00BFFF;
+	border-color:#00BFFF;
+	opacity: .6;
+	-webkit-animation: callkeeper-circle-anim 2.2s infinite linear;
+	-moz-animation: callkeeper-circle-anim 2.2s infinite linear;
+	-ms-animation: callkeeper-circle-anim 2.2s infinite linear;
+	-o-animation: callkeeper-circle-anim 2.2s infinite linear;
+	animation: callkeeper-circle-anim 2.2s infinite linear;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.callkeeper-circle3, .callkeeper-circle4 {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	top: 35px;
+	border-radius: 100%;
+	border-left: 2px solid #00BFFF;
+	border-color: #00BFFF;
+	opacity: .6;
+	-webkit-animation: callkeeper-circle-anim 2.2s infinite linear;
+	-moz-animation: callkeeper-circle-anim 2.2s infinite linear;
+	-ms-animation: callkeeper-circle-anim 2.2s infinite linear;
+	-o-animation: callkeeper-circle-anim 2.2s infinite linear;
+	animation: callkeeper-circle-anim 2.2s infinite linear;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.callkeeper-circle1{left:40px}
+.callkeeper-circle2{left:60px}
+.callkeeper-circle3{left:30px}
+.callkeeper-circle4{left:10px}
+
+@-moz-keyframes callkeeper-circle-anim 
 {
 	0%
 	{
@@ -169,7 +121,7 @@
 	}
 }
 
-@-webkit-keyframes callkeeper_circle-anim 
+@-webkit-keyframes callkeeper-circle-anim 
 {
 	0%
 	{
@@ -188,7 +140,7 @@
 	}
 }
 
-@-o-keyframes callkeeper_circle-anim
+@-o-keyframes callkeeper-circle-anim
 {
 	0%
 	{
@@ -207,7 +159,7 @@
 	}
 }
 
-@keyframes callkeeper_circle-anim
+@keyframes callkeeper-circle-anim
 {
 	0%
 	{
@@ -226,7 +178,7 @@
 	}
 }
 
-@-moz-keyframes callkeeper_circle-anim1
+@-moz-keyframes callkeeper-circle-anim1
 {
 	0%
 	{
@@ -254,7 +206,7 @@
 	}
 }
 
-@-webkit-keyframes callkeeper_circle-anim1
+@-webkit-keyframes callkeeper-circle-anim1
 {
 	0%
 	{
@@ -273,7 +225,7 @@
 	}
 }
 
-@-o-keyframes callkeeper_circle-anim1
+@-o-keyframes callkeeper-circle-anim1
 {
 	0%
 	{
@@ -292,7 +244,7 @@
 	}
 }
 
-@keyframes callkeeper_circle-anim1
+@keyframes callkeeper-circle-anim1
 {
 	0%
 	{
