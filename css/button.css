@@ -17,12 +17,12 @@
 
 .callkeeper-phonewidget:hover .callkeeper-circle1, .callkeeper-phonewidget:hover .callkeeper-circle2
 {
-	border-right: 2px solid #84f030;
+	border-right: 4px solid #67db0c;
 }
 
 .callkeeper-phonewidget:hover .callkeeper-circle3, .callkeeper-phonewidget:hover .callkeeper-circle4
 {
-	border-left:2px solid #84f030;
+	border-left: 4px solid #67db0c;
 }
 
 .callkeeper-img-circle {
