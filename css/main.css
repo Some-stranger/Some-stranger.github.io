@@ -16,7 +16,7 @@
 }
 
 * {
-	transition: all 0.3s;
+	transition: all 1s;
 }
 
 body input:focus:required:invalid,
@@ -190,8 +190,49 @@ ul {
 }
 
 
+.sandwich {
+	display: none;
+	position: fixed;
+	top: 35%;
+	left: 20%;
+	width: 800px;
+	height: 400px;
+	background-color: #32CB8F;
+	z-index: 100;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 
+/*.sandwich p:first-child {
+	margin-top: 50px;
+}*/
 
+/*.sandwich .select-div {
+	flex-direction: row;
+}*/
+
+.sandwich * {
+	margin: 15px;
+}
+
+.sandwich .select-div .select-service,
+.sandwich .callkeeperWidget-form input,
+.sandwich .callkeeperWidget-form button {
+	box-sizing: border-box;
+}
+
+.callkeeper-underlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: .5;
+	z-index: 50;
+}
 
 
 
@@ -212,7 +253,9 @@ footer {
 
 
 
-
+.active {
+	display: flex;
+}
 
 .hidden {
 	display: none;
