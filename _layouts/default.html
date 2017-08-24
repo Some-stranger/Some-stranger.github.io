@@ -103,8 +103,8 @@
 			<p>Мы работаем для Вас ежедневно с XX до XX.</p>
 			<p>Вы можете оставить Ваш заказ и мы свяжимся с Вами в ближайшее время.</p>
 			<div class="select-div">
-				Lorem ipsum dolor sit amet:
-				<select id="select-service">
+				<p>Lorem ipsum dolor sit amet:</p>
+				<select id="select-service" name="service" required>
 					<option value="-1">select-service</option>
 					<option value="0">Lorem_1</option>
 					<option value="1">Lorem_2</option>
@@ -115,8 +115,10 @@
 					<option value="6">Lorem_7</option>
 				</select>
 			</div>
-			<div class="callkeeperWidget_form">
-				<input type="text" maxlength="16" placeholder="Ваш телефон">
+			<nfdiv class="callkeeperWidget-form">
+				<input type="text" name="name" maxlength="16" placeholder="Ваше имя" required>
+				<input type="text" name="phone" maxlength="16" placeholder="Ваш телефон" required>
+				<textarea type="text" name="text" placeholder="Ваше сообщение"></textarea>
 				<button>Отправить</button>
 			</div>
 		</div>
