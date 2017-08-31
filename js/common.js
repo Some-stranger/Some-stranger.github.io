@@ -10,6 +10,12 @@ $(document).ready(function() {
 		$(".callkeeper-underlay").toggleClass("active");
 	});
 
+/*
+	$(".callkeeper-img-circle").on('click', function(){
+		$(this).toggleClass('green');
+	});
+*/
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");
