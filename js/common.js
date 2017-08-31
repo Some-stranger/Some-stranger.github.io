@@ -5,6 +5,11 @@ $(document).ready(function() {
 		$(".callkeeper-underlay").toggleClass("active");
 	});
 
+	$(".close").click(function() {
+		$(".sandwich").toggleClass("active");
+		$(".callkeeper-underlay").toggleClass("active");
+	});
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");
