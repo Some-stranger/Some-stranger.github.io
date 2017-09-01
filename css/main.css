@@ -16,7 +16,7 @@
 }
 
 * {
-	transition: all 1s;
+	transition: all 0.5s;
 }
 
 body input:focus:required:invalid,
@@ -54,7 +54,6 @@ ul {
 .site-main {
 	margin: 0;
 	padding: 0;
-
 }
 
 .site-main .bgc {
@@ -177,16 +176,70 @@ ul {
 	flex-direction: column;
 }
 
+/*//contant*/
+/*/---------------------------------/*/
+
 .site-main .main .content-section .box {
 	display: flex;
 	margin: 30px;
-	padding: 15px 30px 30px;
+	padding: 30px;
 	background-color: #fff;
 	align-items: center;
 	border-radius: 14px;
 	flex-direction: column;
 }
 
+.box .price-box {
+	width: 100%;
+}
+
+#price-button {
+	display: none;
+}
+
+#price-button:checked ~ .price-mnu {
+	display: flex;
+}
+
+#table-1 {
+	display: none;
+}
+
+#table-1:checked ~ .table-1 {
+	display: flex;
+}
+
+#table-2 {
+	display: none;
+}
+
+#table-2:checked ~ .table-2 {
+	display: flex;
+}
+
+#table-3 {
+	display: none;
+}
+
+#table-3:checked ~ .table-3 {
+	display: flex;
+}
+
+.site-main .main .content-section .box .price-box .price-button {
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	margin: 0;
+	width: 100%;
+	background-color: #f0f0f0;
+}
+
+.site-main .main .content-section .box .price-box .price-mnu {
+	display: none;
+	justify-content: center;
+	cursor: pointer;
+	background-color: #f0f0f0;
+}
 
 .site-main .main .content-section .box p {
 	text-indent: 20px;
@@ -194,33 +247,34 @@ ul {
 	column-rule: 2px dashed rgba(0,0,0,.5);
 }
 
-.box .table {
+.box .price-box .table {
 	width: 100%;
-	display: flex;
+	display: none;
 	flex-direction: column;
 }
 
-.box .table .tr {
+.box .price-box .table .tr {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.box .table .tr .td {
+.box .price-box .table .tr .td {
 	display: flex;
 	border-top: 1px solid #aaa;
 	border-right: 1px solid #aaa;
-	padding: 5px;
+	padding: 10px;
 	justify-content: center;
-	flex-basis: 20%;
+	flex-basis: 15%;
 }
 
-.box .table .tr .td:first-child {
+.box .price-box .table .tr .td:first-child {
 	border-left: 1px solid #aaa;
-	flex-basis: 60%;
+	flex-basis: 70%;
+	justify-content: center;
 }
 
-.box .table .tr:last-child {
+.box .price-box .table .tr:last-child {
 	border-bottom: 1px solid grey;
 }
 
@@ -232,6 +286,8 @@ ul {
 	border: 1px solid grey;
 }
 
+/*/End/contant/*/
+/*/---------------------------------/*/
 
 .sandwich {
 	display: none;

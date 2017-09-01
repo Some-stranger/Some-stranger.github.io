@@ -9,6 +9,18 @@ $(document).ready(function() {
 		$(".sandwich").toggleClass("active");
 		$(".callkeeper-underlay").toggleClass("active");
 	});
+	
+/*
+	$(".price-button").click(function() {
+		$(".price-mnu").toggleClass("active");
+	});
+*/
+
+/*	$(".price-mnu").click(function() {
+		$(this).children("h4").stop(false, true).fadeIn(300);
+	},function() {
+		$(this).children("h4").stop(false, true).fadeOut(300);
+	});*/
 
 /*
 	$(".callkeeper-img-circle").on('click', function(){
