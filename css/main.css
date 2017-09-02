@@ -201,30 +201,6 @@ ul {
 	display: flex;
 }
 
-#table-1 {
-	display: none;
-}
-
-#table-1:checked ~ .table-1 {
-	display: flex;
-}
-
-#table-2 {
-	display: none;
-}
-
-#table-2:checked ~ .table-2 {
-	display: flex;
-}
-
-#table-3 {
-	display: none;
-}
-
-#table-3:checked ~ .table-3 {
-	display: flex;
-}
-
 .site-main .main .content-section .box .price-box .price-button {
 	display: flex;
 	justify-content: center;
@@ -235,7 +211,7 @@ ul {
 }
 
 .site-main .main .content-section .box .price-box .price-mnu {
-	display: none;
+	display: flex;
 	justify-content: center;
 	cursor: pointer;
 	background-color: #f0f0f0;
@@ -249,7 +225,7 @@ ul {
 
 .box .price-box .table {
 	width: 100%;
-	display: none;
+	display: flex;
 	flex-direction: column;
 }
 
