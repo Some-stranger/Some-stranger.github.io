@@ -5,6 +5,16 @@
 <!--[if gt IE 8]><!-->
 <html lang="ru">
 <!--<![endif]-->
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<div class="loader">
+		<div class="loader-inner"></div>
+	</div>
+	<script>
+		$(window).load(function() { 
+			$(".loader-Inner").fadeOut(); 
+			$(".loader").delay(400).fadeOut("slow");
+		});
+	</script>
 <head>
 	<meta charset="utf-8" />
 
@@ -35,9 +45,7 @@
 </head>
 <body>
 
-	<div class="loader">
-		<div class="loader-inner"></div>
-	</div>
+
 
 	<div class="site-main">
 		<div class="header">
@@ -157,7 +165,7 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+
 	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
