@@ -159,6 +159,11 @@ $(document).ready(function() {
 	
 });
 
+$(window).load(function() { 
+	$(".loader-Inner").fadeOut(); 
+	$(".loader").delay(400).fadeOut("slow");
+});
+
 // Адаптивные скрипты, которые срабатывают только при определенном разрешении экрана
 // Документация: https://github.com/maciej-gurban/responsive-bootstrap-toolkit
 (function($, document, window, viewport) {

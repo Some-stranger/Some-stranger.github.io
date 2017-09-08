@@ -19,6 +19,39 @@
 	transition: all 0.5s;
 }
 
+/*//loader*/
+/*/---------------------------------/*/
+
+.loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999999;
+}
+
+.loader.loader-inner {
+/*	background-image: url(preloader.gif);*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
+/*/End/loader/*/
+/*/---------------------------------/*/
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	
