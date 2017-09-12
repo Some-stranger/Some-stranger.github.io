@@ -9,24 +9,22 @@ $(document).ready(function() {
 		$(".sandwich").toggleClass("active");
 		$(".callkeeper-underlay").toggleClass("active");
 	});
-	
-/*
-	$(".price-button").click(function() {
-		$(".price-mnu").toggleClass("active");
-	});
-*/
 
-/*	$(".price-mnu").click(function() {
-		$(this).children("h4").stop(false, true).fadeIn(300);
-	},function() {
-		$(this).children("h4").stop(false, true).fadeOut(300);
-	});*/
+	$(function () {
+		$('.spoiler-body').hide(300);
+		$(document).on('click','.spoiler-head',function (e) {
+		e.preventDefault()
+		$(this).parent('.spoiler-wrap').toggleClass("active").find('.spoiler-body').slideToggle();
+		})
+	})
 
-/*
-	$(".callkeeper-img-circle").on('click', function(){
-		$(this).toggleClass('green');
-	});
-*/
+	$(function () {
+		$('.spoiler-body-hide').hide(300);
+		$(document).on('click','.spoiler-head-hide',function (e) {
+		e.preventDefault()
+		$(this).parent('.spoiler-wrap-hide').toggleClass("active").find('.spoiler-body-hide').slideToggle();
+		})
+	})
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
@@ -159,10 +157,7 @@ $(document).ready(function() {
 	
 });
 
-$(window).load(function() { 
-	$(".loader-Inner").fadeOut(); 
-	$(".loader").delay(400).fadeOut("slow");
-});
+
 
 // Адаптивные скрипты, которые срабатывают только при определенном разрешении экрана
 // Документация: https://github.com/maciej-gurban/responsive-bootstrap-toolkit
