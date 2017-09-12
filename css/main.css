@@ -256,12 +256,16 @@ ul {
 	background: #fff;
 	margin: 0 0 8px;
 	border: 1px solid #efefef;
+	border-radius: 14px;
 }
 
 .spoiler-head {
+	display: flex;
 	background: #efefef;
 	cursor: pointer;
 	padding: 5px;
+	justify-content: center;
+	border-radius: 14px;
 }
 
 .spoiler-body {
@@ -287,12 +291,16 @@ ul {
 	background: #fff;
 	margin: 0 0 8px;
 	border: 1px solid #efefef;
+	border-radius: 14px;
 }
 
 .spoiler-head-hide {
+	display: flex;
+	justify-content: center;
 	background: #efefef;
 	cursor: pointer;
 	padding: 5px;
+	border-radius: 14px;
 }
 
 .spoiler-body-hide {
