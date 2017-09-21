@@ -16,13 +16,13 @@
 }
 
 * {
-	transition: all 0.5s;
+/*	transition: all 0.5s;*/
 }
 
 /*//loader*/
 /*/---------------------------------/*/
 
-.loader {
+/*.loader {
 	background: none repeat scroll 0 0 #ffffff;
 	bottom: 0;
 	height: 100%;
@@ -35,7 +35,7 @@
 }
 
 .loader.loader-inner {
-/*	background-image: url(preloader.gif);*/
+	background-image: url(preloader.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -47,7 +47,7 @@
 	left: 50%;
 	top: 50%;
 	position: absolute;
-}
+}*/
 
 /*/End/loader/*/
 /*/---------------------------------/*/
