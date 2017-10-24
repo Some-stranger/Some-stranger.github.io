@@ -488,10 +488,12 @@ footer {
 .hidden {
 	display: none;
 }
+
 .carousel img {
 	height: auto;
 	width: 100%;
 }
+
 .parallax {
 	background-attachment: fixed;
 	background-position: 50% 0;
