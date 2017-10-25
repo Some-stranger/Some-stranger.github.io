@@ -264,8 +264,12 @@ ul {
 	background: #efefef;
 	cursor: pointer;
 	padding: 5px;
-	justify-content: center;
+	justify-content: space-between;
 	border-radius: 14px;
+}
+
+i {
+	padding: 3px;
 }
 
 .spoiler-body {
@@ -296,7 +300,7 @@ ul {
 
 .spoiler-head-hide {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	background: #efefef;
 	cursor: pointer;
 	padding: 5px;
