@@ -159,8 +159,9 @@ $(document).ready(function() {
 	
 });
 
-
-
+$(function () {
+	$(document).pjax('.header, .nav, .site-bar, .callkeeper-phonewidget, .sandwich, .callkeeper-underlay', '.pjax-container', {fragment: '.pjax-container'});
+});
 // Адаптивные скрипты, которые срабатывают только при определенном разрешении экрана
 // Документация: https://github.com/maciej-gurban/responsive-bootstrap-toolkit
 (function($, document, window, viewport) {
