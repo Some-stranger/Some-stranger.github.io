@@ -330,6 +330,16 @@ i {
 	justify-content: space-between;
 }
 
+.tr h3 {
+	display: flex;
+	border: 1px solid #aaa;
+	border-bottom: 0;
+	padding: 10px;
+	margin: 0;
+	justify-content: center;
+	width: 100%;
+}
+
 .td {
 	display: flex;
 	border-top: 1px solid #aaa;

@@ -21,7 +21,9 @@ $(document).ready(function() {
 	$(function () {
 		$('.spoiler-body-hide').hide(300);
 		$(document).on('click','.spoiler-head-hide',function (e) {
+
 		e.preventDefault()
+		$(this).parent('.spoiler-head-hide').removeClass('fa-arrow-down').addClass('fa-arrow-up');
 		$(this).parent('.spoiler-wrap-hide').toggleClass("active").find('.spoiler-body-hide').slideToggle();
 		})
 	})
