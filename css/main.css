@@ -125,7 +125,7 @@ ul {
 }
 
 .site-main .nav {
-	background-color: #282B2D;
+	background-color: #042f32;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 10px;
@@ -179,7 +179,7 @@ ul {
 }
 
 .site-main .site-bar .bar h3 {
-	color: #32CB8F;
+	color: #0a6970;
 	text-align: center;
 }
 
@@ -199,13 +199,14 @@ ul {
 }
 
 .site-main .site-bar .bar ul a:hover {
-	background: #32CB8F;
-	border-right: 5px solid #282B2D;
+	background: #0a6970;
+	border-right: 5px solid #042f32;
+	color: #fff;
 }
 
 .site-main .main .content-section {
 	display: inline-flex;
-	background-color: #32CB8F;
+	background-color: #0a6970;
 	flex-direction: column;
 }
 
@@ -485,7 +486,7 @@ i {
 
 footer {
 	align-items: center;
-	background-color: #464646;
+	background-color: #042f32;
 	color: #fff;
 	display: flex;
 	height: 100px;
