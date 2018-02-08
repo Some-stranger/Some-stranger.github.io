@@ -116,12 +116,13 @@ ul {
 	flex-grow: 1;
 	height: 100%;
 	justify-content: center;
+	text-align: center;
 }
 
 .site-main .header .header-container img {
 	position: relative;
 	top: 5px;
-	width: 105px;
+	width: 203px;
 }
 
 .site-main .nav {
