@@ -283,7 +283,7 @@ i {
 }
 
 .spoiler-wrap.active {
-	border-color: #32CB8F;
+	border-color: #0a6970;
 }
 
 .spoiler-wrap.active .spoiler-head {
@@ -318,11 +318,11 @@ i {
 }
 
 .spoiler-wrap-hide.active {
-	border-color: #32CB8F;
+	border-color: #0a6970;
 }
 
 .spoiler-wrap-hide.active .spoiler-head-hide {
-	background: #32CB8F;
+	background: #0a6970;
 	color: #fff;
 }
 
